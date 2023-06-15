@@ -18,7 +18,12 @@ const SearchManufacturer = ( {manufacturer, setManufacturer}:SearchManufacturerP
         <Combobox value={manufacturer} onChange={setManufacturer}>
             <div className="relative w-full">
                 <Combobox.Button className="absolute top-[14px]">
-                <Image src="/car-logo.svg" alt="Car Logo" width={20} height={20} />
+                <Image 
+                    src="/car-logo.svg" 
+                    alt="Car Logo" 
+                    width={20} 
+                    height={20} 
+                />
                 </Combobox.Button>
                 <Combobox.Input 
                     className="search-manufacturer__input"
