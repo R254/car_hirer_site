@@ -13,7 +13,7 @@ interface CarDetailsProps {
     closeModal: () => void
     car: CarProps
 }
-const CarDetails = ({isOpen, closeModal,car}: CarDetailsProps) => {
+const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
   return (
     <>
     <Transition appear show={isOpen} as={Fragment} >
@@ -30,7 +30,7 @@ const CarDetails = ({isOpen, closeModal,car}: CarDetailsProps) => {
                 <div className="fixed inset-0 bg-black bg-opacity-25"/>
             </Transition.Child>
             <div className="fixed inset-0 overflow-y-auto">
-                <div className="min-h-full items-center justify-center p-4 text-center">
+                <div className="flex min-h-full items-center justify-center p-4 text-center">
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"

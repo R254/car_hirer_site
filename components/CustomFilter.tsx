@@ -1,7 +1,7 @@
 'use client'
 
 import { CustomFilterProps } from "@/types"
-import { updateSeachParams } from "@/utils"
+import { updateSearchParams } from "@/utils"
 import { Listbox, Transition } from "@headlessui/react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -12,7 +12,7 @@ const CustomFilter = ({title,options}: CustomFilterProps) => {
   const router = useRouter()
 
   const handleUpdateParams = (e:{title:string,value:string}) => {
-    const newPathName = updateSeachParams(title, e.value.toLowerCase())
+    const newPathName = updateSearchParams(title, e.value.toLowerCase())
 
     router.push(newPathName)
   }

@@ -20,6 +20,7 @@ const CarCard = ({car}:CarCardProps) => {
     const carRent = calculateCarRent(city_mpg,year)
 
   return (
+    // <div className="car-card group">Cars</div>
     <div className="car-card group">
         <div className="car-card__content">
             <h2 className="car-card__content-title">{make} {model} </h2>
@@ -64,7 +65,7 @@ const CarCard = ({car}:CarCardProps) => {
             </div>
             <div className="car-card__btn-container">
                 <CustomButton 
-                    title="More Details"
+                    title="View More Details"
                     containerStyles=" w-full py-[16px] rounded-full bg-primary-blue"
                     textStyles = "text-white text-[14px] leading-[17px]font-bold"
                     rightIcon = '/arrow-right.svg'
