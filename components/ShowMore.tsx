@@ -28,7 +28,7 @@ const ShowMore = ({pageNumber, isNext}:ShowMoreProps) => {
         </div>
         <div className="w-full flex-center gap-2 mt-5">
             <CustomButton
-                title= {`Page ${pageNumber}`}
+                title= {`Page 1 - ${pageNumber}`}
                 btnType="button"
                 containerStyles="bg-primary-blue text-white rounded-lg"
             />
